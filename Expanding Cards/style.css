@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 30px;
+    position: relative;
+    transition: flex 500ms linear;
+}
+
+.active {
+    flex: 10;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    left: 20px;
+    opacity: 0;
+    transition: 500ms linear;
+}
+
+.active h3 {
+    opacity: 1;
+}
+
